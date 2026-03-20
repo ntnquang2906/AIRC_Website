@@ -14,7 +14,6 @@ const detailTranslations = {
         title: "Detailed Information",
         overview: "Product Overview",
         productName: "Product Name",
-        slug: "Slug",
         summary: "Summary",
     },
     vi: {
@@ -22,7 +21,6 @@ const detailTranslations = {
         title: "Thông tin chi tiết",
         overview: "Tổng quan sản phẩm",
         productName: "Tên sản phẩm",
-        slug: "Đường dẫn",
         summary: "Tóm tắt",
     },
 };
@@ -73,7 +71,7 @@ export default function ProductDetailPage() {
             </section>
 
             <section className="bg-white">
-                <div className="mx-auto grid max-w-5xl gap-12 px-6 py-20 md:grid-cols-[1.3fr_0.7fr]">
+                <div className="mx-auto grid max-w-5xl gap-12 px-6 py-20 md:grid-cols-[1.3fr_0.7fr] items-start">
                     <div>
                         <h2 className="text-3xl font-semibold text-gray-950">
                             {t.title}
@@ -97,13 +95,6 @@ export default function ProductDetailPage() {
                                     {t.productName}
                                 </p>
                                 <p className="mt-1 text-lg">{product.title}</p>
-                            </div>
-
-                            <div>
-                                <p className="text-sm font-medium uppercase tracking-wide text-red-700">
-                                    {t.slug}
-                                </p>
-                                <p className="mt-1 text-lg">{product.slug}</p>
                             </div>
 
                             <div>
