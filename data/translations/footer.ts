@@ -1,0 +1,38 @@
+export const footerTranslations = {
+    en: {
+        brandDescription:
+            "The Artificial Intelligence Research Center is committed to advancing research, innovation, and collaboration in artificial intelligence.",
+        aboutTitle: "About",
+        mission: "Our Mission",
+        vision: "Our Vision",
+        research: "Research",
+        exploreTitle: "Explore",
+        products: "Products",
+        activities: "Activities",
+        cooperation: "Cooperation",
+        contactTitle: "Contact",
+        addressLine1: "Room 507, building E3, 144 Xuan Thuy, Cau Giay",
+        addressLine2: "Hanoi, Vietnam",
+        email: "vnuairc@gmail.com",
+        phone: "+84 123 456 789",
+        copyright: "© 2026 AIRC. All rights reserved.",
+    },
+    vi: {
+        brandDescription:
+            "Trung tâm Nghiên cứu tiên tiến quốc tế về Trí tuệ nhân tạo ứng dụng cam kết thúc đẩy nghiên cứu, đổi mới sáng tạo và hợp tác trong lĩnh vực trí tuệ nhân tạo.",
+        aboutTitle: "Giới thiệu",
+        mission: "Sứ mệnh",
+        vision: "Tầm nhìn",
+        research: "Nghiên cứu",
+        exploreTitle: "Khám phá",
+        products: "Sản phẩm",
+        activities: "Hoạt động",
+        cooperation: "Hợp tác",
+        contactTitle: "Liên hệ",
+        addressLine1: "Phòng 507, tòa E3, 144 Xuân Thủy, Cầu Giấy",
+        addressLine2: "Hà Nội, Việt Nam",
+        email: "vnuairc@gmail.com",
+        phone: "+84 123 456 789",
+        copyright: "© 2026 AIRC. Bảo lưu mọi quyền.",
+    },
+};
