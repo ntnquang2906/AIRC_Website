@@ -10,7 +10,7 @@ import ContactPreview from "@/components/home/contact-preview";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen overflow-x-hidden bg-white">
       <Navbar />
       <HeroSection />
       <AboutPreview />

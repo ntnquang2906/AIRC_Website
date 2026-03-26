@@ -10,26 +10,26 @@ export default function HeroSection() {
 
     return (
         <section className="bg-gradient-to-b from-red-50 to-white">
-            <div className="mx-auto max-w-7xl px-6 py-24 text-center md:py-32">
-                <h1 className="mx-auto max-w-5xl text-5xl font-semibold tracking-tight text-gray-950 md:text-7xl">
+            <div className="mx-auto max-w-7xl px-4 py-16 text-center sm:px-6 sm:py-20 md:py-28">
+                <h1 className="mx-auto max-w-4xl text-3xl font-semibold tracking-tight text-gray-950 sm:text-4xl md:text-6xl lg:text-7xl">
                     {t.title}
                 </h1>
 
-                <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-gray-600 md:text-2xl">
+                <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg md:text-xl">
                     {t.description}
                 </p>
 
-                <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
                     <Link
                         href="/about"
-                        className="rounded-lg bg-red-700 px-7 py-3 text-base font-semibold text-white transition hover:bg-red-800"
+                        className="rounded-lg bg-red-700 px-6 py-3 text-sm font-semibold text-white transition hover:bg-red-800 sm:w-auto sm:text-base"
                     >
                         {t.learnMore}
                     </Link>
 
                     <Link
                         href="/contact"
-                        className="rounded-lg border border-gray-300 bg-white px-7 py-3 text-base font-semibold text-gray-900 transition hover:border-red-200 hover:text-red-700"
+                        className="rounded-lg border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition hover:border-red-200 hover:text-red-700 sm:w-auto sm:text-base"
                     >
                         {t.contactUs}
                     </Link>

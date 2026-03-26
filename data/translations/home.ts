@@ -64,7 +64,7 @@ export const homeTranslations = {
             paragraph1:
                 "Trung tâm Nghiên cứu tiên tiến quốc tế về Trí tuệ nhân tạo ứng dụng (AIRC) là đơn vị tiên phong trong nghiên cứu, phát triển và đổi mới sáng tạo về AI. Chúng tôi tập trung vào các công nghệ tiên tiến định hình tương lai.",
             paragraph2:
-                "Đội ngũ các nhà nghiên cứu, nhà khoa học và kỹ sư của chúng tôi cùng hợp tác trong các dự án đột phá về học máy, xử lý ngôn ngữ tự nhiên, thị giác máy tính và robot. Chúng tôi cam kết phát triển AI có trách nhiệm vì lợi ích của xã hội.",
+                "Đội ngũ các nhà nghiên cứu, nhà khoa học và kỹ sư của AIRC cùng hợp tác trong các dự án đột phá về học máy, xử lý ngôn ngữ tự nhiên, thị giác máy tính và robot. AIRC cam kết phát triển AI có trách nhiệm vì lợi ích của xã hội.",
             stats: {
                 members: "Thành viên",
                 projects: "Dự án hoàn thành",

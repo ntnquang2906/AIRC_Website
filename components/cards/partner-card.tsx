@@ -12,16 +12,16 @@ export default function PartnerCard({
     description,
 }: PartnerCardProps) {
     const cardContent = (
-        <div className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-sm transition hover:-translate-y-1 hover:border-red-200 hover:shadow-md">
-            <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-red-50 text-2xl text-red-700">
+        <div className="flex h-full flex-col rounded-2xl border border-gray-200 bg-white p-5 text-center shadow-sm transition hover:-translate-y-1 hover:border-red-200 hover:shadow-md sm:p-6 lg:p-8">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-red-50 text-xl text-red-700 sm:h-16 sm:w-16 sm:text-2xl">
                 ◆
             </div>
 
-            <h3 className="mt-6 text-2xl font-medium text-gray-950">
+            <h3 className="mt-4 text-lg font-medium text-gray-950 sm:mt-5 sm:text-xl lg:mt-6 lg:text-2xl">
                 {name}
             </h3>
 
-            <p className="mt-5 flex-1 text-lg leading-8 text-gray-600">
+            <p className="mt-3 flex-1 text-sm leading-6 text-gray-600 sm:mt-4 sm:text-base sm:leading-7 lg:mt-5 lg:text-lg lg:leading-8">
                 {description}
             </p>
         </div>

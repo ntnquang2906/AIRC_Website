@@ -14,7 +14,9 @@ export const footerTranslations = {
         addressLine1: "Room 507, building E3, 144 Xuan Thuy, Cau Giay",
         addressLine2: "Hanoi, Vietnam",
         email: "vnuairc@gmail.com",
-        phone: "+84 123 456 789",
+        phone: "+84 904171284",
+        workingHoursTitle: "Working Hours",
+        workingHours: "Monday – Friday: 8:30 – 11:30 | 13:30 – 17:30",
         copyright: "© 2026 AIRC. All rights reserved.",
     },
     vi: {
@@ -32,7 +34,9 @@ export const footerTranslations = {
         addressLine1: "Phòng 507, tòa E3, 144 Xuân Thủy, Cầu Giấy",
         addressLine2: "Hà Nội, Việt Nam",
         email: "vnuairc@gmail.com",
-        phone: "+84 123 456 789",
+        phone: "+84 904171284",
+        workingHoursTitle: "Giờ làm việc",
+        workingHours: "Thứ 2 – Thứ 6: 8:30 – 11:30 | 13:30 – 17:30",
         copyright: "© 2026 AIRC. Bảo lưu mọi quyền.",
     },
 };

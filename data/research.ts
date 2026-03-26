@@ -1,45 +1,67 @@
-export const researchProjects = {
+export type ResearchStatus = "published" | "under_review" | "ongoing";
+
+export type ResearchProject = {
+    id: number;
+    slug: string;
+    category: string;
+    status: ResearchStatus;
+    title: string;
+    description: string;
+    fullDescription: string;
+    content: string[];
+};
+
+export const researchProjects: {
+    en: ResearchProject[];
+    vi: ResearchProject[];
+} = {
     en: [
         {
             id: 1,
-            slug: "deep-learning",
-            title: "Deep Learning",
+            slug: "advanced-neural-architecture-search",
+            category: "Deep Learning",
+            status: "ongoing",
+            title: "Advanced Neural Architecture Search for Efficient Models",
             description:
-                "Exploring advanced neural network architectures and machine learning techniques.",
+                "Exploring advanced neural architecture search methods to design efficient and lightweight AI models.",
             fullDescription:
-                "This research area focuses on advanced deep neural network architectures, training strategies, and scalable learning systems for complex AI problems.",
+                "This research focuses on advanced neural architecture search methods for identifying efficient deep learning models with strong performance and reduced computational cost.",
             content: [
-                "The Deep Learning research program investigates modern architectures such as convolutional neural networks, recurrent neural networks, transformers, and multimodal learning systems.",
-                "Our work emphasizes both theoretical advancement and practical deployment across areas such as image analysis, language processing, and predictive modeling.",
-                "The research also explores optimization methods, model efficiency, interpretability, and real-world robustness for advanced AI applications.",
+                "The study investigates automated model design strategies that improve efficiency while maintaining predictive accuracy.",
+                "It emphasizes scalable deep learning solutions suitable for real-world deployment in resource-constrained environments.",
+                "The research also contributes to optimization, robustness, and practical implementation of advanced deep learning systems.",
             ],
         },
         {
             id: 2,
-            slug: "natural-language-processing",
-            title: "Natural Language Processing",
+            slug: "multilingual-language-understanding-systems",
+            category: "NLP",
+            status: "published",
+            title: "Multilingual Language Understanding Systems",
             description:
-                "Developing systems for language understanding, generation, and human-computer interaction.",
+                "Developing intelligent systems for multilingual language understanding and generation.",
             fullDescription:
-                "This research direction develops intelligent systems capable of understanding, generating, and interacting through human language in multilingual and domain-specific contexts.",
+                "This research develops multilingual natural language processing systems capable of understanding, generating, and interacting through human language across diverse linguistic settings.",
             content: [
-                "The Natural Language Processing group studies language representation, machine translation, text generation, summarization, question answering, and conversational AI.",
-                "Research also addresses Vietnamese language resources, cross-lingual transfer, and domain-specific applications in education, healthcare, and public services.",
-                "The goal is to build robust language technologies that support both scientific advancement and practical human-centered AI systems.",
+                "The project studies multilingual representation learning, machine translation, question answering, and conversational AI.",
+                "It supports language technologies for both global communication and localized applications, including Vietnamese language resources.",
+                "The overall goal is to build robust and inclusive NLP systems for research, education, and public service applications.",
             ],
         },
         {
             id: 3,
-            slug: "computer-vision",
-            title: "Computer Vision",
+            slug: "real-time-object-detection-in-complex-environments",
+            category: "Computer Vision",
+            status: "under_review",
+            title: "Real-time Object Detection in Complex Environments",
             description:
-                "Building intelligent systems that interpret and analyze visual information.",
+                "Designing computer vision systems for real-time object detection in challenging environments.",
             fullDescription:
-                "This area focuses on designing intelligent vision systems that can perceive, understand, and reason from visual data in real-world environments.",
+                "This research area focuses on robust object detection and visual understanding methods for dynamic, cluttered, and real-world environments.",
             content: [
-                "The Computer Vision research program explores object detection, segmentation, scene understanding, activity recognition, medical imaging, and visual reasoning.",
-                "The group develops methods that combine learning-based approaches with efficient deployment strategies for industrial and institutional applications.",
-                "Research outcomes support practical systems for monitoring, automation, healthcare, and smart infrastructure.",
+                "The study addresses challenges such as occlusion, varying illumination, motion blur, and dense scenes.",
+                "It develops efficient computer vision models for practical applications including surveillance, automation, and intelligent monitoring.",
+                "The research aims to improve both the speed and reliability of real-time vision systems in complex operational settings.",
             ],
         },
     ],
@@ -47,44 +69,50 @@ export const researchProjects = {
     vi: [
         {
             id: 1,
-            slug: "deep-learning",
-            title: "Học sâu",
+            slug: "advanced-neural-architecture-search",
+            category: "Học sâu",
+            status: "ongoing",
+            title: "Tìm kiếm kiến trúc mạng nơ-ron nâng cao cho các mô hình hiệu quả",
             description:
-                "Nghiên cứu các kiến trúc mạng nơ-ron tiên tiến và các kỹ thuật học máy hiện đại.",
+                "Nghiên cứu các phương pháp tìm kiếm kiến trúc mạng nơ-ron tiên tiến nhằm thiết kế các mô hình AI gọn nhẹ và hiệu quả.",
             fullDescription:
-                "Lĩnh vực này tập trung vào các kiến trúc mạng nơ-ron sâu tiên tiến, chiến lược huấn luyện và các hệ thống học có khả năng mở rộng cho những bài toán AI phức tạp.",
+                "Hướng nghiên cứu này tập trung vào các phương pháp tìm kiếm kiến trúc mạng nơ-ron tiên tiến để xác định các mô hình học sâu có hiệu năng cao nhưng giảm chi phí tính toán.",
             content: [
-                "Chương trình nghiên cứu Học sâu khảo sát các kiến trúc hiện đại như mạng nơ-ron tích chập, mạng hồi tiếp, transformer và các hệ thống học đa phương thức.",
-                "Hoạt động nghiên cứu nhấn mạnh cả tiến bộ về lý thuyết lẫn khả năng triển khai thực tiễn trong các lĩnh vực như phân tích hình ảnh, xử lý ngôn ngữ và mô hình dự báo.",
-                "Nhóm nghiên cứu cũng tập trung vào các phương pháp tối ưu, hiệu quả mô hình, khả năng giải thích và độ bền vững trong các ứng dụng AI nâng cao.",
+                "Nghiên cứu khảo sát các chiến lược thiết kế mô hình tự động nhằm nâng cao hiệu quả trong khi vẫn duy trì độ chính xác dự đoán.",
+                "Trọng tâm là phát triển các giải pháp học sâu có khả năng mở rộng và phù hợp với triển khai thực tế trong môi trường hạn chế tài nguyên.",
+                "Đề tài cũng đóng góp vào các vấn đề tối ưu hóa, độ bền vững và triển khai thực tiễn của các hệ thống học sâu tiên tiến.",
             ],
         },
         {
             id: 2,
-            slug: "natural-language-processing",
-            title: "Xử lý ngôn ngữ tự nhiên",
+            slug: "multilingual-language-understanding-systems",
+            category: "Xử lý ngôn ngữ tự nhiên",
+            status: "published",
+            title: "Hệ thống hiểu ngôn ngữ đa ngữ",
             description:
-                "Phát triển các hệ thống phục vụ hiểu ngôn ngữ, sinh ngôn ngữ và tương tác người máy.",
+                "Phát triển các hệ thống thông minh phục vụ hiểu và sinh ngôn ngữ trong môi trường đa ngôn ngữ.",
             fullDescription:
-                "Hướng nghiên cứu này phát triển các hệ thống thông minh có khả năng hiểu, sinh và tương tác thông qua ngôn ngữ con người trong các bối cảnh đa ngôn ngữ và chuyên ngành.",
+                "Hướng nghiên cứu này phát triển các hệ thống xử lý ngôn ngữ tự nhiên đa ngữ có khả năng hiểu, sinh và tương tác thông qua ngôn ngữ con người trong nhiều bối cảnh ngôn ngữ khác nhau.",
             content: [
-                "Nhóm Xử lý ngôn ngữ tự nhiên nghiên cứu biểu diễn ngôn ngữ, dịch máy, sinh văn bản, tóm tắt văn bản, hỏi đáp và trí tuệ hội thoại.",
-                "Nghiên cứu cũng chú trọng đến tài nguyên tiếng Việt, chuyển giao liên ngôn ngữ và các ứng dụng chuyên biệt trong giáo dục, y tế và dịch vụ công.",
-                "Mục tiêu là xây dựng các công nghệ ngôn ngữ vững chắc, phục vụ cả phát triển khoa học lẫn các hệ thống AI lấy con người làm trung tâm.",
+                "Đề tài nghiên cứu học biểu diễn đa ngữ, dịch máy, hỏi đáp và trí tuệ hội thoại.",
+                "Nghiên cứu hỗ trợ các công nghệ ngôn ngữ cho cả giao tiếp toàn cầu lẫn các ứng dụng bản địa hóa, bao gồm tài nguyên tiếng Việt.",
+                "Mục tiêu tổng thể là xây dựng các hệ thống NLP mạnh, toàn diện và có giá trị ứng dụng trong nghiên cứu, giáo dục và dịch vụ công.",
             ],
         },
         {
             id: 3,
-            slug: "computer-vision",
-            title: "Thị giác máy tính",
+            slug: "real-time-object-detection-in-complex-environments",
+            category: "Thị giác máy tính",
+            status: "under_review",
+            title: "Phát hiện đối tượng thời gian thực trong môi trường phức tạp",
             description:
-                "Xây dựng các hệ thống thông minh có khả năng diễn giải và phân tích thông tin hình ảnh.",
+                "Thiết kế các hệ thống thị giác máy tính phục vụ phát hiện đối tượng thời gian thực trong điều kiện khó.",
             fullDescription:
-                "Lĩnh vực này tập trung vào việc thiết kế các hệ thống thị giác thông minh có khả năng cảm nhận, hiểu và suy luận từ dữ liệu hình ảnh trong môi trường thực tế.",
+                "Lĩnh vực này tập trung vào các phương pháp phát hiện đối tượng và hiểu hình ảnh có tính bền vững cao trong các môi trường động, phức tạp và gần với thực tế.",
             content: [
-                "Chương trình nghiên cứu Thị giác máy tính khai thác các bài toán phát hiện đối tượng, phân đoạn ảnh, hiểu cảnh, nhận dạng hoạt động, ảnh y tế và suy luận trực quan.",
-                "Nhóm phát triển các phương pháp kết hợp giữa tiếp cận học máy và chiến lược triển khai hiệu quả cho các ứng dụng công nghiệp và tổ chức.",
-                "Kết quả nghiên cứu hỗ trợ các hệ thống thực tiễn trong giám sát, tự động hóa, y tế và hạ tầng thông minh.",
+                "Nghiên cứu giải quyết các thách thức như che khuất, thay đổi ánh sáng, nhòe chuyển động và cảnh nhiều đối tượng.",
+                "Nhóm phát triển các mô hình thị giác máy tính hiệu quả cho các ứng dụng thực tiễn như giám sát, tự động hóa và quan trắc thông minh.",
+                "Mục tiêu là nâng cao đồng thời cả tốc độ và độ tin cậy của các hệ thống thị giác thời gian thực trong bối cảnh vận hành phức tạp.",
             ],
         },
     ],

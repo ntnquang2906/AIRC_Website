@@ -4,12 +4,18 @@ export const contactTranslations = {
         pageDescription:
             "Reach out to AIRC for inquiries, collaboration opportunities, and research partnerships.",
         infoTitle: "Contact Information",
+
         addressTitle: "Address",
         addressValue: "Room 507, building E3, 144 Xuan Thuy, Cau Giay, Hanoi, Vietnam",
+
         emailTitle: "Email",
         emailValue: "vnuairc@gmail.com",
+
         phoneTitle: "Phone",
-        phoneValue: "+84 123 456 789",
+        phoneValue: "+84 904171284",
+
+        workingHoursTitle: "Working Hours",
+        workingHoursValue: "Monday – Friday: 8:30 – 11:30 | 13:30 – 17:30",
 
         form: {
             nameLabel: "Name",
@@ -39,12 +45,18 @@ export const contactTranslations = {
         pageDescription:
             "Liên hệ AIRC để trao đổi về vấn đề hợp tác, cơ hội nghiên cứu và hoạt động phối hợp.",
         infoTitle: "Thông tin liên hệ",
+
         addressTitle: "Địa chỉ",
-        addressValue: "phòng 507, tòa E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội, Việt Nam",
+        addressValue: "Phòng 507, tòa E3, 144 Xuân Thủy, Cầu Giấy, Hà Nội, Việt Nam",
+
         emailTitle: "Email",
         emailValue: "vnuairc@gmail.com",
+
         phoneTitle: "Điện thoại",
-        phoneValue: "+84 123 456 789",
+        phoneValue: "+84 904171284",
+
+        workingHoursTitle: "Giờ làm việc",
+        workingHoursValue: "Thứ 2 – Thứ 6: 8:30 – 11:30 | 13:30 – 17:30",
 
         form: {
             nameLabel: "Họ và tên",

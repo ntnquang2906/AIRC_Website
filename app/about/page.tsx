@@ -15,36 +15,36 @@ export default function AboutPage() {
             <Navbar />
 
             <section className="bg-red-50">
-                <div className="mx-auto max-w-7xl px-6 py-20 text-center">
-                    <h1 className="text-5xl font-semibold text-gray-950 md:text-6xl">
+                <div className="mx-auto max-w-7xl px-4 py-14 text-center sm:px-6 sm:py-16 md:py-20">
+                    <h1 className="text-3xl font-semibold text-gray-950 sm:text-4xl md:text-5xl lg:text-6xl">
                         {t.pageTitle}
                     </h1>
-                    <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+                    <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg sm:leading-8">
                         {t.pageDescription}
                     </p>
                 </div>
             </section>
 
             <section className="bg-white">
-                <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
+                <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-16 md:grid-cols-2 md:items-center md:gap-12 md:py-20">
                     <div>
-                        <h2 className="text-4xl font-semibold text-gray-950 md:text-5xl">
+                        <h2 className="text-3xl font-semibold text-gray-950 sm:text-4xl md:text-5xl">
                             {t.missionTitle}
                         </h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                        <p className="mt-5 text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg sm:leading-8">
                             {t.missionDescription}
                         </p>
 
-                        <h2 className="mt-12 text-4xl font-semibold text-gray-950 md:text-5xl">
+                        <h2 className="mt-10 text-3xl font-semibold text-gray-950 sm:mt-12 sm:text-4xl md:text-5xl">
                             {t.visionTitle}
                         </h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                        <p className="mt-5 text-base leading-7 text-gray-600 sm:mt-6 sm:text-lg sm:leading-8">
                             {t.visionDescription}
                         </p>
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <div className="relative h-[420px] w-full max-w-[500px] overflow-hidden rounded-3xl">
+                        <div className="relative h-[260px] w-full max-w-[500px] overflow-hidden rounded-2xl sm:h-[320px] md:h-[420px] md:rounded-3xl">
                             <Image
                                 src="/images/lab_pic.jpg"
                                 alt="AIRC About"

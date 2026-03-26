@@ -14,6 +14,7 @@ export const products = {
                 "This product represents one of the center’s notable research and application outcomes in 2025.",
             ],
             image: "/images/VQA.png",
+            video: "/videos/products/VQA.mp4",
         },
         {
             id: 2,
@@ -32,6 +33,7 @@ export const products = {
                 "Overall, the model goes beyond merely automating commentary. It opens a long-term development direction for sports media through the combination of automation and human control, localized content generation, and attention to copyright, broadcasting ethics, and safe large-scale deployment across different markets.",
             ],
             image: "/images/AC.png",
+            video: "/videos/products/AC.mp4",
         },
         {
             id: 3,
@@ -47,6 +49,7 @@ export const products = {
                 "This product demonstrates the center’s applied AI capabilities in document intelligence and enterprise automation.",
             ],
             image: "/images/Invoice.png",
+            video: "/videos/products/Invoice.mp4",
         },
         {
             id: 4,
@@ -80,6 +83,7 @@ export const products = {
                 "Đây là một trong những kết quả nghiên cứu và ứng dụng tiêu biểu của trung tâm trong năm 2025.",
             ],
             image: "/images/VQA.png",
+            video: "/videos/products/VQA.mp4",
         },
         {
             id: 2,
@@ -98,6 +102,7 @@ export const products = {
                 "Nhìn chung, mô hình này không chỉ dừng lại ở việc tự động hóa hoạt động bình luận mà còn mở ra hướng phát triển dài hạn cho ngành truyền thông thể thao. Sự kết hợp giữa tự động hóa và kiểm soát của con người, cùng với khả năng bản địa hóa nội dung và đảm bảo các yếu tố bản quyền, đạo đức phát sóng, giúp nền tảng vừa linh hoạt vừa an toàn khi triển khai trên quy mô lớn và ở nhiều thị trường khác nhau.",
             ],
             image: "/images/AC.png",
+            video: "/videos/products/AC.mp4",
         },
         {
             id: 3,
@@ -113,6 +118,7 @@ export const products = {
                 "Đây là sản phẩm thể hiện năng lực ứng dụng AI của trung tâm trong lĩnh vực xử lý tài liệu thông minh và tự động hóa doanh nghiệp.",
             ],
             image: "/images/Invoice.png",
+            video: "/videos/products/Invoice.mp4",
         },
         {
             id: 4,

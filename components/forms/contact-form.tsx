@@ -67,11 +67,12 @@ export default function ContactForm() {
     return (
         <form
             onSubmit={handleSubmit}
-            className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm"
+            className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-6 md:p-8"
         >
-            <div className="grid gap-6 md:grid-cols-2">
+            {/* NAME + EMAIL */}
+            <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700">
+                    <label className="mb-1.5 block text-xs font-medium text-gray-700 sm:text-sm">
                         {t.nameLabel}
                     </label>
                     <input
@@ -79,13 +80,13 @@ export default function ContactForm() {
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-red-400"
+                        className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none transition focus:border-red-400 sm:px-4 sm:py-3 sm:text-base"
                         placeholder={t.namePlaceholder}
                     />
                 </div>
 
                 <div>
-                    <label className="mb-2 block text-sm font-medium text-gray-700">
+                    <label className="mb-1.5 block text-xs font-medium text-gray-700 sm:text-sm">
                         {t.emailLabel}
                     </label>
                     <input
@@ -93,14 +94,15 @@ export default function ContactForm() {
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-red-400"
+                        className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none transition focus:border-red-400 sm:px-4 sm:py-3 sm:text-base"
                         placeholder={t.emailPlaceholder}
                     />
                 </div>
             </div>
 
-            <div className="mt-6">
-                <label className="mb-2 block text-sm font-medium text-gray-700">
+            {/* SUBJECT */}
+            <div className="mt-4 sm:mt-6">
+                <label className="mb-1.5 block text-xs font-medium text-gray-700 sm:text-sm">
                     {t.subjectLabel}
                 </label>
                 <input
@@ -108,36 +110,43 @@ export default function ContactForm() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-red-400"
+                    className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none transition focus:border-red-400 sm:px-4 sm:py-3 sm:text-base"
                     placeholder={t.subjectPlaceholder}
                 />
             </div>
 
-            <div className="mt-6">
-                <label className="mb-2 block text-sm font-medium text-gray-700">
+            {/* MESSAGE */}
+            <div className="mt-4 sm:mt-6">
+                <label className="mb-1.5 block text-xs font-medium text-gray-700 sm:text-sm">
                     {t.messageLabel}
                 </label>
                 <textarea
                     name="message"
-                    rows={6}
+                    rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-red-400"
+                    className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none transition focus:border-red-400 sm:px-4 sm:py-3 sm:text-base"
                     placeholder={t.messagePlaceholder}
                 />
             </div>
 
+            {/* BUTTON */}
             <div className="mt-6">
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="rounded-lg bg-red-700 px-6 py-3 font-semibold text-white transition hover:bg-red-800 disabled:opacity-60"
+                    className="inline-flex rounded-lg bg-red-700 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-red-800 disabled:opacity-60 sm:px-6 sm:py-3 sm:text-base"
                 >
                     {isSubmitting ? t.sending : t.submit}
                 </button>
             </div>
 
-            {status && <p className="mt-4 text-sm text-gray-700">{status}</p>}
+            {/* STATUS */}
+            {status && (
+                <p className="mt-4 text-sm text-gray-700">
+                    {status}
+                </p>
+            )}
         </form>
     );
 }
